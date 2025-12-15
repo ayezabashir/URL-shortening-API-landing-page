@@ -6,7 +6,7 @@
   --color-blue: hsl(180, 66%, 49%);
   --color-purple: hsl(257, 27%, 26%);
   --color-Red: hsl(0, 87%, 67%);
-  --color-black: oklch(26.8% 0.007 34.298);
+  --color-black: #1f2937;
   --color-white: hsl(0,0%,100%);
   --color-gray: oklch(70.9% 0.01 56.259);
   --font-poppins: "Poppins", sans-serif;

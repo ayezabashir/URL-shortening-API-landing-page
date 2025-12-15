@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-const baseClass = "flex items-center gap-7 font-bold"
+const baseClass = "w-full md:w-auto flex flex-col md:flex-row items-center gap-7 font-bold py-10 md:py-0 text-lg md:text-base "
 const navLinks = [
     {
         to: "/features",
@@ -16,22 +16,22 @@ const navLinks = [
 ]
 const NavItems = () => {
     return (
-        <nav aria-label='Main Navigation' className='flex justify-between items-center'>
-            <div className={`${baseClass} text-gray`}>
+        <nav aria-label='Main Navigation' className='flex flex-col md:flex-row justify-between items-center'>
+            <div className={`${baseClass} text-white md:text-gray `}>
                 {
                     navLinks.map((link)=>(
                         <NavLink 
                             key={link.to} 
                             to={link.to}
-                            className={({isActive})=>isActive ? "underline underline-offset-10" : "no-underline"}
+                            className={({isActive})=>isActive ? "md:underline underline-offset-10" : "no-underline"}
                         >
                             {link.label}
                         </NavLink>
                     ))
                 }
             </div>
-            <div className={`${baseClass}`}>
-                <Link to={"/login"} className='text-gray'>Login</Link>
+            <div className={`${baseClass} border-t border-gray md:border-0`}>
+                <Link to={"/login"} className='text-white md:text-gray'>Login</Link>
                 <Link to={"/signup"} className='bg-blue text-white py-2 px-5 rounded-3xl'>Sign Up</Link>
             </div>
         </nav>

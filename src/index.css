@@ -10,6 +10,18 @@
   --color-white: hsl(0,0%,100%);
   --color-gray: oklch(70.9% 0.01 56.259);
   --font-poppins: "Poppins", sans-serif;
+  --animate-slide-in : slide-in 0.5s ease-out forwards;
+
+  @keyframes slide-in {
+    0%{
+      opacity: 0%;
+      transform: translateY(-10px);
+    }    
+    100%{
+      opacity: 100%;
+      transform: translateY(0px);
+    }
+  }
 }
 
 @layer base {
@@ -23,8 +35,8 @@
   }
 }
 
-@layer components {
-  .container {
-    @apply max-w-7xl mx-auto p-4 sm:p-8 ;
-  }
+@utility container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
 }

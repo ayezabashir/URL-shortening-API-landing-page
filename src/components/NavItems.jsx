@@ -14,7 +14,7 @@ const navLinks = [
         label : "Resources"
     }
 ]
-const NavItems = () => {
+const NavItems = ({onNavigate}) => {
     return (
         <nav aria-label='Main Navigation' className='flex flex-col md:flex-row justify-between items-center'>
             <div className={`${baseClass} text-white md:text-gray `}>
@@ -23,6 +23,7 @@ const NavItems = () => {
                         <NavLink 
                             key={link.to} 
                             to={link.to}
+                            onClick={onNavigate}
                             className={({isActive})=>isActive ? "md:underline underline-offset-10" : "no-underline"}
                         >
                             {link.label}
@@ -31,8 +32,8 @@ const NavItems = () => {
                 }
             </div>
             <div className={`${baseClass} border-t border-gray md:border-0`}>
-                <Link to={"/login"} className='text-white md:text-gray'>Login</Link>
-                <Link to={"/signup"} className='bg-blue text-white py-2 px-5 rounded-3xl'>Sign Up</Link>
+                <Link to={"/login"} onClick={onNavigate} className='text-white md:text-gray'>Login</Link>
+                <Link to={"/signup"} onClick={onNavigate} className='bg-blue text-white py-2 px-5 rounded-3xl'>Sign Up</Link>
             </div>
         </nav>
     )

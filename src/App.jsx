@@ -5,19 +5,20 @@ import Pricing from "./pages/Pricing"
 import Resources from "./pages/Resources"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
-import Header from "./components/Header"
+import MainLayout from "./layouts/MainLayout"
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route element={<MainLayout />} >
+            <Route path="/" element={<Home />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/resources" element={<Resources />} />
+          </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>

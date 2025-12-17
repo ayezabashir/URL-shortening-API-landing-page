@@ -30,12 +30,15 @@ const AdvanceStatics = () => {
                 <h2 className='text-3xl text-black font-bold'>Advanced Statistics</h2>
                 <p className='text-gray font-semibold max-w-120 text-center'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
             </div>
-            <div className='flex flex-col lg:flex-row justify-between gap-5 mt-20'>
-                {
-                    stats.map((stat, index) => (
-                        <StaticsCard key={index} stat_img={stat.img} stat_title={stat.title} stat_desc={stat.description} margin_top={stat.margin_top} />
-                    ))
-                }
+            <div className='relative'>
+                <div className='h-[80%] w-2 lg:h-2 bg-blue lg:w-full absolute left-[49.5%] lg:left-0 top-10 lg:top-40'></div>
+                <div className='flex flex-col lg:flex-row justify-between gap-5 mt-20'>
+                    {
+                        stats.map((stat, index) => (
+                            <StaticsCard key={index} stat_img={stat.img} stat_title={stat.title} stat_desc={stat.description} margin_top={stat.margin_top} />
+                        ))
+                    }
+                </div>
             </div>
         </section>
     )

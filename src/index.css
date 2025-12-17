@@ -9,6 +9,7 @@
   --color-black: #1f2937;
   --color-white: hsl(0,0%,100%);
   --color-gray: oklch(70.9% 0.01 56.259);
+  --color-light-gray:#F0F1F6;
   --font-poppins: "Poppins", sans-serif;
   --animate-slide-in : slide-in 0.5s ease-out forwards;
 

@@ -11,7 +11,7 @@ const ShortnerForm = () => {
                     </form>
                 </div>
             </div>
-            <div className="mt-14">
+            <div className="mt-35 md:mt-14">
                 <OldLinks />
                 <OldLinks />
                 <OldLinks />

@@ -8,8 +8,6 @@ const Home = () => {
       <HeroComponent />
       <div className='bg-light-gray py-50 mt-20 relative'>
         <ShortnerForm />
-        <OldLinks />
-        <OldLinks />
       </div>
     </>
   )

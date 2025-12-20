@@ -25,7 +25,7 @@ const Header = () => {
                         <img className="w-10 hover:opacity-90 cursor-pointer" src={menu} alt="Menu" />
                     </button>
                     {
-                        openMenu && <div className="animate-slide-in bg-purple w-full absolute right-0 left-0 top-14 rounded-xl px-10">
+                        openMenu && <div className="animate-slide-in bg-purple w-full absolute right-0 left-0 top-14 z-10 rounded-xl px-10">
                             <NavItems onNavigate={() => setOpenMenu(false)} />
                         </div>
                     }

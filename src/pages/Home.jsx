@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <HeroComponent />
-      <div className='bg-light-gray relative'>
+      <div className='bg-light-gray relative mt-15'>
         <ShortnerForm />
         <AdvanceStatics />
       </div>

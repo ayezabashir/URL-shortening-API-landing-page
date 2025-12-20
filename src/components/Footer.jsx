@@ -1,3 +1,18 @@
+const footerLinks = [
+  {
+    title: "Features",
+    items: ["Link Shortening", "Branded Links", "Analytics"],
+  },
+  {
+    title: "Resources",
+    items: ["Support", "Developers", "Support"]
+  },
+  {
+    title: "Company",
+    items: ["About", "Our Team", "Careers", "Contact"]
+  }
+]
+
 const Footer = () => {
   return (
     <footer className='bg-black'>
@@ -9,25 +24,17 @@ const Footer = () => {
             </svg>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:items-start w-5/7 text-white">
-            <ul className="leading-relaxed text-center md:text-start">
-              <li className="font-bold mb-4">Features</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Link Shortening</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Branded Links</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Analytics</li>
-            </ul>
-            <ul className="leading-relaxed text-center md:text-start">
-              <li className="font-bold mb-4">Resources</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Blog</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Developers</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Support</li>
-            </ul>
-            <ul className="leading-relaxed text-center md:text-start">
-              <li className="font-bold mb-4">Company</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">About</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Our Team</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Careers</li>
-              <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">Contact</li>
-            </ul>
+            {
+              footerLinks.map((item) => (
+                <ul className="leading-relaxed text-center md:text-start">
+                  <li className="font-bold mb-4">{item.title}</li>
+                  {item.items.map((item) =>
+                    <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">{item}</li>
+
+                  )}
+                </ul>
+              ))
+            }
             <ul className="flex justify-between items-center gap-6" >
               <li className="group">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path className="group-hover:fill-blue transition-all ease-in-out" fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" /></svg>

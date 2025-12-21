@@ -5,7 +5,41 @@ const ShortnerForm = () => {
     const [url, setUrl] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        if (!url.trim()) {
+            setError("Input feild is empty");
+            return
+        }
+        try{
+            setLoading(true);
+            setError("");
+            
+            const response = await fetch("https://spoo.me/api/shorten", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({url:url.trim()})
+            })
 
+            const data = await response.json();
+
+            if(data.error){
+                setError(data.error);
+                return;
+            }
+
+            setUrl(data.result_url)
+            console.log(data.result_url);
+
+        }catch(error){
+            setError("Something went wrong. Please try again.");
+            console.log(error)
+        }finally{
+            setLoading(false);
+        }
+    }
     return (
         <section className="container ">
             <div className="absolute -top-20 left-0 right-0 p-6">

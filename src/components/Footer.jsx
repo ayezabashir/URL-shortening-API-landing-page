@@ -25,12 +25,11 @@ const Footer = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:items-start w-5/7 text-white">
             {
-              footerLinks.map((item) => (
-                <ul className="leading-relaxed text-center md:text-start">
+              footerLinks.map((item, index) => (
+                <ul key={index} className="leading-relaxed text-center md:text-start">
                   <li className="font-bold mb-4">{item.title}</li>
-                  {item.items.map((item) =>
-                    <li className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">{item}</li>
-
+                  {item.items.map((item, index) =>
+                    <li key={index} className="text-gray hover:text-blue transition-all ease-in-out cursor-pointer text-sm mb-2">{item}</li>
                   )}
                 </ul>
               ))

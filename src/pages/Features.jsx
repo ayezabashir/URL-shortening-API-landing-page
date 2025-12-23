@@ -41,15 +41,27 @@ const allFeatures = [
 
 const Features = () => {
   return (
-    <div className="container">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {
-          allFeatures.map((feature, index) => (
-            <FeaturesCard key={index} icon={feature.icon} title={feature.title} description={feature.description} />
-          ))
-        }
+    <>
+      <div className="bg-light-gray bg-linear-to-t to-blue from-white">
+        <div className="container">
+          <div className="max-w-225 mx-auto text-center py-15">
+            <h1 className="text-base md:text-lg font-bold text-gray mb-2">Powerful Connections Begin with a Click</h1>
+            <h2 className="text-3xl md:text-5xl font-extrabold text-purple mb-7">Shortly Connection Platform</h2>
+            <p className="text-base md:text-xl font-light leading-relaxed">The Shortly Connections Platform brings together everything you need to create strong brand connections, manage links and QR codes, and engage audiences everywhere — all in one seamless platform.</p>
+
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="container">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          {
+            allFeatures.map((feature, index) => (
+              <FeaturesCard key={index} icon={feature.icon} title={feature.title} description={feature.description} />
+            ))
+          }
+        </div>
+      </div>
+    </>
   )
 }
 

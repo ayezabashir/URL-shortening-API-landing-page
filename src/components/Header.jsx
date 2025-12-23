@@ -2,16 +2,16 @@ import { useState } from "react"
 import NavItems from "./NavItems"
 import logo from "/logo.svg"
 import menu from "/menu.svg"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
     return (
         <header className="container">
             <div className="relative flex items-center justify-between gap-14">
-                <NavLink to="/" className="cursor-pointer">
+                <Link to="/" className="cursor-pointer">
                     <img className="w-30" src={logo} alt="Shortly Logo" />
-                </NavLink>
+                </Link>
                 <div className="hidden md:block w-full">
                     <NavItems />
                 </div>

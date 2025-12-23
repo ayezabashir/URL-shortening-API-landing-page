@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import AdvanceStatics from "../components/AdvanceStatics";
 import HeroComponent from "../components/HeroComponent";
 import ShortnerForm from "../components/ShortnerForm";
-import OldLinks from "../components/OldLinks";
 
 const Home = () => {
   const [links, setLinks] = useState([]);
@@ -21,7 +20,6 @@ const Home = () => {
 
       <div className="bg-light-gray relative mt-15">
         <ShortnerForm links={links} setLinks={setLinks} />
-        <OldLinks links={links} />
         <AdvanceStatics />
       </div>
     </>

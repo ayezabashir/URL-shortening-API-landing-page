@@ -4,35 +4,53 @@ import OldLinks from "./OldLinks"
 const ShortnerForm = () => {
     const [url, setUrl] = useState("");
     const [loading, setLoading] = useState(false);
+    const [shortLinks, setShortLinks] = useState([]);
     const [error, setError] = useState("");
-    const apikey = ""
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         if (!url.trim()) {
-            setError("Input feild is empty");
-            return
+            setError("Please enter a valid URL");
+            return;
         }
+
         try {
             setLoading(true);
             setError("");
 
-            const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`, {
+            const response = await fetch("http://localhost:3000/api/shorten", {
+                method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
-                    'apikey': apikey
-                }
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    url: url.trim(),
+                }),
             });
 
-            const data = await response.json();
-            console.log(data.result.short_link);
 
-        } catch (error) {
+            const data = await response.json();
+
+            if (data.error) {
+                setError(data.error);
+                return;
+            }
+
+            setShortLinks(prev => [
+                ...prev,
+                { original: url, short: data.result_url }
+            ]);
+            setUrl(""); 
+
+        } catch (err) {
             setError("Something went wrong. Please try again.");
-            console.log(error)
+            console.log(err);
         } finally {
             setLoading(false);
         }
-    }
+    };
+
     return (
         <section className="container ">
             <div className="absolute -top-20 left-0 right-0 p-6">
@@ -47,9 +65,7 @@ const ShortnerForm = () => {
                 </div>
             </div>
             <div className="mt-35 md:mt-14">
-                <OldLinks />
-                <OldLinks />
-                <OldLinks />
+                <OldLinks shortLinks={shortLinks} />
             </div>
         </section>
     )

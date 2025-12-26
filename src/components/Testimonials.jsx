@@ -42,21 +42,24 @@ const Testimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [direction, setDirection] = useState("right");
   const current = testimonials[currentTestimonial];
+  const buttonStyles = "w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group"
+  const buttonImage = "p-2 transform group-hover:-translate-x-1 duration-100"
 
-  const prevTestimonial = (prev) => {
+  const prevTestimonial = (index) => {
     setDirection("left")
-    if (prev < 1) {
+    if (index < 1) {
       setCurrentTestimonial(testimonials.length - 1);
     } else {
-      setCurrentTestimonial(prev - 1);
+      setCurrentTestimonial(index - 1);
     }
   }
-  const nextTestimonial = (next) => {
+
+  const nextTestimonial = (index) => {
     setDirection("right")
-    if (next >= testimonials.length - 1) {
+    if (index >= testimonials.length - 1) {
       setCurrentTestimonial(0);
     } else {
-      setCurrentTestimonial(next + 1)
+      setCurrentTestimonial(index + 1)
     }
   }
 
@@ -65,22 +68,15 @@ const Testimonials = () => {
       <div className="container">
         <div className="relative py-15 ">
           {
-            <TestimonialCard
-              key={currentTestimonial} // 👈 changes every time index updates → animation restarts
-              direction={direction}
-              pic={current.pic}
-              name={current.name}
-              role={current.role}
-              quote={current.quote}
-            />
+            <TestimonialCard key={currentTestimonial} direction={direction} pic={current.pic} name={current.name} role={current.role} quote={current.quote} />
 
           }
           <div className="absolute bottom-0 w-full flex justify-center items-center gap-5">
-            <button className="w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group" onClick={() => prevTestimonial(currentTestimonial)}>
-              <img className="p-2 transform group-hover:-translate-x-1 duration-100" src={leftarrow} alt="left arrow" />
+            <button className={buttonStyles} onClick={() => prevTestimonial(currentTestimonial)}>
+              <img className={buttonImage} src={leftarrow} alt="left arrow" />
             </button>
-            <button className="w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group" onClick={() => nextTestimonial(currentTestimonial)}>
-              <img className="p-2 transform group-hover:translate-x-1 duration-100" src={rightarrow} alt="right arrow" />
+            <button className={buttonStyles} onClick={() => nextTestimonial(currentTestimonial)}>
+              <img className={buttonImage} src={rightarrow} alt="right arrow" />
             </button>
           </div>
         </div>

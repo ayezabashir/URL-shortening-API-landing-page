@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import FeaturesCard from "../components/FeaturesCard";
+import Testimonials from "../components/Testimonials";
 
 const allFeatures = [
   {
@@ -48,12 +50,16 @@ const Features = () => {
             <h1 className="text-base md:text-lg font-bold text-gray mb-2">Powerful Connections Begin with a Click</h1>
             <h2 className="text-3xl md:text-5xl font-extrabold text-purple mb-7">Shortly Connection Platform</h2>
             <p className="text-base md:text-xl font-light leading-relaxed">The Shortly Connections Platform brings together everything you need to create strong brand connections, manage links and QR codes, and engage audiences everywhere — all in one seamless platform.</p>
-
+            <Link to={"/pricing"}>
+            <button className="py-3 text-lg bg-black text-blue font-semibold mt-10 rounded-md cursor-pointer transform duration-150 ease-in-out hover:scale-105 w-50">
+              Get started for free
+            </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-10">
           {
             allFeatures.map((feature, index) => (
               <FeaturesCard key={index} icon={feature.icon} title={feature.title} description={feature.description} />
@@ -61,6 +67,7 @@ const Features = () => {
           }
         </div>
       </div>
+      <Testimonials />
     </>
   )
 }

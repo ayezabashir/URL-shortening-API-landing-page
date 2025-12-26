@@ -64,12 +64,12 @@ const Testimonials = () => {
   }
 
   return (
-    <div className='bg-blue w-full py-10'>
+    <div className='bg-blue w-full py-15'>
       <div className="container">
+        <h3 className=" text-center text-2xl sm:text-3xl md:text-4xl font-extrabold text-purple">What our customers are saying</h3>
         <div className="relative py-15 ">
           {
             <TestimonialCard key={currentTestimonial} direction={direction} pic={current.pic} name={current.name} role={current.role} quote={current.quote} />
-
           }
           <div className="absolute bottom-0 w-full flex justify-center items-center gap-5">
             <button className={buttonStyles} onClick={() => prevTestimonial(currentTestimonial)}>

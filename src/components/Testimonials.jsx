@@ -1,10 +1,11 @@
 import { useState } from "react";
-import TestimonialCard from "./TestimonialCard";
 import person1 from "/person1.jpg";
 import person2 from "/person2.jpg";
 import person3 from "/person3.jpg";
 import person4 from "/person4.jpg";
-
+import leftarrow from "/arrow-left.svg";
+import rightarrow from "/arrow-right.svg";
+import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
@@ -36,24 +37,52 @@ const testimonials = [
       "We switched to Shortly for its security and performance. The HTTPS encryption and malware filtering gave us peace of mind. Short links that are safe and smart — exactly what we needed.",
   },
 ];
-{/* <TestimonialCard key={index} pic={item.pic} name={item.name} role={item.role} quote={item.quote} /> */ }
 
 const Testimonials = () => {
-  const [currTestimonial, setCurrTestimonial] = useState(0);
-  let current = testimonials.filter((_, index) => index === currTestimonial)
-  console.log(current)
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [direction, setDirection] = useState("right");
+  const current = testimonials[currentTestimonial];
+
+  const prevTestimonial = (prev) => {
+    setDirection("left")
+    if (prev < 1) {
+      setCurrentTestimonial(testimonials.length - 1);
+    } else {
+      setCurrentTestimonial(prev - 1);
+    }
+  }
+  const nextTestimonial = (next) => {
+    setDirection("right")
+    if (next >= testimonials.length - 1) {
+      setCurrentTestimonial(0);
+    } else {
+      setCurrentTestimonial(next + 1)
+    }
+  }
 
   return (
-    <div className='bg-blue min-h-200 w-full'>
+    <div className='bg-blue w-full py-10'>
       <div className="container">
-        <div className="flex">
+        <div className="relative py-15 ">
           {
-            
+            <TestimonialCard
+              key={currentTestimonial} // 👈 changes every time index updates → animation restarts
+              direction={direction}
+              pic={current.pic}
+              name={current.name}
+              role={current.role}
+              quote={current.quote}
+            />
+
           }
-        </div>
-        <div className="absolute">
-          <button className="right-0" onClick={(prev) => setCurrTestimonial(prev + 1)}>Nex</button>
-          <button className="left-0" onClick={(prev) => setCurrTestimonial(prev - 1)}>Prev</button>
+          <div className="absolute bottom-0 w-full flex justify-center items-center gap-5">
+            <button className="w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group" onClick={() => prevTestimonial(currentTestimonial)}>
+              <img className="p-2 transform group-hover:-translate-x-1 duration-100" src={leftarrow} alt="left arrow" />
+            </button>
+            <button className="w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group" onClick={() => nextTestimonial(currentTestimonial)}>
+              <img className="p-2 transform group-hover:translate-x-1 duration-100" src={rightarrow} alt="right arrow" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

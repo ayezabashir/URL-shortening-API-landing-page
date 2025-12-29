@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PricingCard from "./PricingCard";
 
 const plansDesc = [
@@ -14,6 +15,7 @@ const plansDesc = [
     ]
   },
   {
+    isyear: false,
     plan: "Pro Monthly",
     callout: "Most Popular",
     price: 9,
@@ -26,6 +28,7 @@ const plansDesc = [
     ]
   },
   {
+    isyear: false,
     plan: "Premium Monthly",
     price: 19,
     planDesc: "For growing businesses",
@@ -37,6 +40,7 @@ const plansDesc = [
     ]
   },
   {
+    isyear: true,
     plan: "Pro Yearly",
     callout: "Save 20%",
     price: 90,
@@ -49,6 +53,7 @@ const plansDesc = [
     ]
   },
   {
+    isyear: true,
     plan: "Premium Yearly",
     callout: "Best Value",
     price: 190,
@@ -64,13 +69,36 @@ const plansDesc = [
 
 
 const Plans = () => {
+  const [showYearly, setShowYearly] = useState(false);
   return (
     <div>
+      <div className="mb-7 flex justify-center items-center gap-5">
+        <button
+          className={`rounded-md  cursor-pointer py-2 px-5 group ${showYearly ? "border border-purple text-purple" : "text-white bg-purple"}`}
+          onClick={() => setShowYearly(false)}>
+          Monthly Plans
+        </button>
+        <button
+          className={`rounded-md cursor-pointer py-2 px-5 group ${showYearly ? "text-white bg-purple" : "border border-purple text-purple"}`}
+          onClick={() => setShowYearly(true)}>
+          Annual Plans
+        </button>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {
-            plansDesc.map((item,index)=>(
-                <PricingCard key={index} plan={item.plan} callout={item.callout} price={item.price} planDesc={item.planDesc} planFeatures={item.planFeatures} />
+          plansDesc
+            .filter(plans => plans.plan === "Free" || (showYearly ? plans.isyear : !plans.isyear))
+            .map((item, index) => (
+              <PricingCard
+                key={index}
+                plan={item.plan}
+                callout={item.callout}
+                price={item.price}
+                planDesc={item.planDesc}
+                planFeatures={item.planFeatures} />
             ))
         }
+      </div>
     </div>
   )
 }

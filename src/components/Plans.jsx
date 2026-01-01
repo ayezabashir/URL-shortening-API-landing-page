@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PricingCard from "./PricingCard";
-import plansDesc from "../data/PlansData";
+import {plans} from "../data/plans-data.json";
 
 const Plans = () => {
   const [showYearly, setShowYearly] = useState(false);
@@ -20,7 +20,7 @@ const Plans = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {
-          plansDesc
+          plans
             .filter(plans => plans.plan === "Free" || (showYearly ? plans.isyear : !plans.isyear))
             .map((item, index) => (
               <PricingCard

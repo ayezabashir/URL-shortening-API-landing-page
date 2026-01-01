@@ -4,7 +4,6 @@ import PricingCard from "./PricingCard";
 const plansDesc = [
   {
     plan: "Free",
-    callout: "contains ads",
     price: 0,
     planDesc: "Try it out for free",
     planFeatures: [
@@ -55,7 +54,6 @@ const plansDesc = [
   {
     isyear: true,
     plan: "Premium Yearly",
-    callout: "Best Value",
     price: 190,
     planDesc: "Annual plan for businesses",
     planFeatures: [
@@ -71,7 +69,7 @@ const plansDesc = [
 const Plans = () => {
   const [showYearly, setShowYearly] = useState(false);
   return (
-    <div>
+    <div className="mb-10">
       <div className="mb-7 flex justify-center items-center gap-5">
         <button
           className={`rounded-md  cursor-pointer py-2 px-5 group ${showYearly ? "border border-purple text-purple" : "text-white bg-purple"}`}

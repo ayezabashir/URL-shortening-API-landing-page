@@ -216,59 +216,6 @@
       ]
     },
     {
-      "heading": "Custom Landing Pages",
-      "features": [
-        {
-          "name": "Landing Pages Allowed",
-          "Free": "2",
-          "Pro Monthly": "10",
-          "Premium Monthly": "25",
-          "Pro Yearly": "15",
-          "Premium Yearly": "50"
-        },
-        {
-          "name": "YouTube Embed",
-          "Free": "Allowed",
-          "Pro Monthly": "Allowed",
-          "Premium Monthly": "Allowed",
-          "Pro Yearly": "Allowed",
-          "Premium Yearly": "Allowed"
-        },
-        {
-          "name": "Profile & Background Upload",
-          "Free": "Allowed",
-          "Pro Monthly": "Allowed",
-          "Premium Monthly": "Allowed",
-          "Pro Yearly": "Allowed",
-          "Premium Yearly": "Allowed"
-        },
-        {
-          "name": "Social Icons",
-          "Free": "Basic",
-          "Pro Monthly": "Enhanced",
-          "Premium Monthly": "Premium",
-          "Pro Yearly": "Enhanced",
-          "Premium Yearly": "Premium"
-        },
-        {
-          "name": "Digital Business Card Builder",
-          "Free": "Limited",
-          "Pro Monthly": "Advanced",
-          "Premium Monthly": "Advanced",
-          "Pro Yearly": "Advanced",
-          "Premium Yearly": "Fully Custom"
-        },
-        {
-          "name": "Landing Page Branding",
-          "Free": "Platform branded",
-          "Pro Monthly": "Custom branding",
-          "Premium Monthly": "White-label branding",
-          "Pro Yearly": "Custom branding",
-          "Premium Yearly": "White-label"
-        }
-      ]
-    },
-    {
       "heading": "Custom Domain Tools",
       "features": [
         {

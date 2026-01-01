@@ -1,4 +1,5 @@
 import Plans from "../components/Plans"
+import PlansComparison from "../components/PlansComparison"
 
 const Pricing = () => {
   return (
@@ -9,6 +10,7 @@ const Pricing = () => {
           <h2 className="text-base sm:text-lg text-purple font-light mb-7">Create, track, and optimize short links that boost engagement and deliver real insights.</h2>
         </div>
         <Plans />
+        <PlansComparison />
       </div>
     </>
   )

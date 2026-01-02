@@ -6,7 +6,7 @@ const Plans = () => {
   const [showYearly, setShowYearly] = useState(false);
   return (
     <div className="mb-10">
-      <div className="mb-7 flex justify-center items-center gap-5">
+      <div className="mb-7 flex justify-center items-center gap-3">
         <button
           className={`rounded-md  cursor-pointer py-2 px-5 group ${showYearly ? "border border-purple text-purple" : "text-white bg-purple"}`}
           onClick={() => setShowYearly(false)}>
@@ -21,7 +21,7 @@ const Plans = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {
           plans
-            .filter(plans => plans.plan === "Free" || (showYearly ? plans.isyear : !plans.isyear))
+            .filter(plans => plans.plan === "free" || (showYearly ? plans.isyear : !plans.isyear))
             .map((item, index) => (
               <PricingCard
                 key={index}

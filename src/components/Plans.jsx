@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PricingCard from "./PricingCard";
-import {plans} from "../data/plans-data.json";
+import { plans } from "../data/plans-data.json";
 
 const Plans = () => {
   const [showYearly, setShowYearly] = useState(false);

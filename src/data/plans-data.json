@@ -2,7 +2,7 @@
   "plans": [
     {
       "isyear": false,
-      "plan": "Free",
+      "plan": "free",
       "price": 0,
       "planDesc": "Try it out for free",
       "planFeatures": [
@@ -14,7 +14,7 @@
     },
     {
       "isyear": false,
-      "plan": "Pro Monthly",
+      "plan": "pro_Monthly",
       "callout": "Most Popular",
       "price": 9,
       "planDesc": "For small teams and individuals",
@@ -27,7 +27,7 @@
     },
     {
       "isyear": false,
-      "plan": "Premium Monthly",
+      "plan": "premium_Monthly",
       "price": 19,
       "planDesc": "For growing businesses",
       "planFeatures": [
@@ -39,7 +39,7 @@
     },
     {
       "isyear": true,
-      "plan": "Pro Yearly",
+      "plan": "pro_Yearly",
       "callout": "Save 20%",
       "price": 90,
       "planDesc": "Annual plan for small teams",
@@ -52,7 +52,7 @@
     },
     {
       "isyear": true,
-      "plan": "Premium Yearly",
+      "plan": "premium_Yearly",
       "price": 190,
       "planDesc": "Annual plan for businesses",
       "planFeatures": [
@@ -69,27 +69,27 @@
       "features": [
         {
           "name": "Monthly Price",
-          "Free": "$0/mo",
-          "Pro Monthly": "$9/mo",
-          "Premium Monthly": "$19/mo",
-          "Pro Yearly": "$90/yr (Save 20%)",
-          "Premium Yearly": "$190/yr"
+          "free": "$0/mo",
+          "pro_Monthly": "$9/mo",
+          "premium_Monthly": "$19/mo",
+          "pro_Yearly": "$90/yr (Save 20%)",
+          "premium_Yearly": "$190/yr"
         },
         {
           "name": "Best For",
-          "Free": "Students, testing, hobby projects",
-          "Pro Monthly": "Individuals, small teams",
-          "Premium Monthly": "Growing startups & freelancers",
-          "Pro Yearly": "Small teams wanting savings",
-          "Premium Yearly": "Businesses & long-term users"
+          "free": "Students, testing, hobby projects",
+          "pro_Monthly": "Individuals, small teams",
+          "premium_Monthly": "Growing startups & freelancers",
+          "pro_Yearly": "Small teams wanting savings",
+          "premium_Yearly": "Businesses & long-term users"
         },
         {
           "name": "Support Level",
-          "Free": "Email support",
-          "Pro Monthly": "Priority email support",
-          "Premium Monthly": "Phone + email support",
-          "Pro Yearly": "Priority email support",
-          "Premium Yearly": "Dedicated phone + email support"
+          "free": "Email support",
+          "pro_Monthly": "Priority email support",
+          "premium_Monthly": "Phone + email support",
+          "pro_Yearly": "Priority email support",
+          "premium_Yearly": "Dedicated phone + email support"
         }
       ]
     },
@@ -98,67 +98,67 @@
       "features": [
         {
           "name": "Short Links / Month",
-          "Free": "5/mo",
-          "Pro Monthly": "Unlimited",
-          "Premium Monthly": "Unlimited",
-          "Pro Yearly": "Unlimited",
-          "Premium Yearly": "Unlimited"
+          "free": "5/mo",
+          "pro_Monthly": "Unlimited",
+          "premium_Monthly": "Unlimited",
+          "pro_Yearly": "Unlimited",
+          "premium_Yearly": "Unlimited"
         },
         {
           "name": "Redirects / Month",
-          "Free": "2/sec",
-          "Pro Monthly": "10,000/mo",
-          "Premium Monthly": "50,000/mo",
-          "Pro Yearly": "12,000/mo",
-          "Premium Yearly": "60,000/mo"
+          "free": "2/sec",
+          "pro_Monthly": "10,000/mo",
+          "premium_Monthly": "50,000/mo",
+          "pro_Yearly": "12,000/mo",
+          "premium_Yearly": "60,000/mo"
         },
         {
           "name": "Branded Links",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Custom Back-Halves",
-          "Free": "3/mo",
-          "Pro Monthly": "100/mo",
-          "Premium Monthly": "500/mo",
-          "Pro Yearly": "200/mo",
-          "Premium Yearly": "1000/mo"
+          "free": "3/mo",
+          "pro_Monthly": "100/mo",
+          "premium_Monthly": "500/mo",
+          "pro_Yearly": "200/mo",
+          "premium_Yearly": "1000/mo"
         },
         {
           "name": "Mobile Deep Links",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Bulk Link Creation",
-          "Free": "Not included",
-          "Pro Monthly": "50/upload",
-          "Premium Monthly": "500/upload",
-          "Pro Yearly": "100/upload",
-          "Premium Yearly": "1000/upload"
+          "free": "Not included",
+          "pro_Monthly": "50/upload",
+          "premium_Monthly": "500/upload",
+          "pro_Yearly": "100/upload",
+          "premium_Yearly": "1000/upload"
         },
         {
           "name": "Rate Limit",
-          "Free": "2/sec",
-          "Pro Monthly": "10/sec",
-          "Premium Monthly": "25/sec",
-          "Pro Yearly": "12/sec",
-          "Premium Yearly": "30/sec"
+          "free": "2/sec",
+          "pro_Monthly": "10/sec",
+          "premium_Monthly": "25/sec",
+          "pro_Yearly": "12/sec",
+          "premium_Yearly": "30/sec"
         },
         {
           "name": "Link Clicks",
-          "Free": "Unlimited",
-          "Pro Monthly": "Unlimited",
-          "Premium Monthly": "Unlimited",
-          "Pro Yearly": "Unlimited",
-          "Premium Yearly": "Unlimited"
+          "free": "Unlimited",
+          "pro_Monthly": "Unlimited",
+          "premium_Monthly": "Unlimited",
+          "pro_Yearly": "Unlimited",
+          "premium_Yearly": "Unlimited"
         }
       ]
     },
@@ -167,51 +167,51 @@
       "features": [
         {
           "name": "QR Codes / Month",
-          "Free": "2/mo",
-          "Pro Monthly": "20/mo",
-          "Premium Monthly": "200/mo",
-          "Pro Yearly": "50/mo",
-          "Premium Yearly": "500/mo"
+          "free": "2/mo",
+          "pro_Monthly": "20/mo",
+          "premium_Monthly": "200/mo",
+          "pro_Yearly": "50/mo",
+          "premium_Yearly": "500/mo"
         },
         {
           "name": "Custom Logo in QR",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Color & Pattern Options",
-          "Free": "Limited",
-          "Pro Monthly": "Advanced",
-          "Premium Monthly": "Advanced",
-          "Pro Yearly": "Advanced",
-          "Premium Yearly": "Fully Custom"
+          "free": "Limited",
+          "pro_Monthly": "Advanced",
+          "premium_Monthly": "Advanced",
+          "pro_Yearly": "Advanced",
+          "premium_Yearly": "Fully Custom"
         },
         {
           "name": "Download Formats",
-          "Free": "PNG/JPEG",
-          "Pro Monthly": "PNG/JPEG/SVG",
-          "Premium Monthly": "PNG/JPEG/SVG/PDF",
-          "Pro Yearly": "PNG/JPEG/SVG",
-          "Premium Yearly": "All formats"
+          "free": "PNG/JPEG",
+          "pro_Monthly": "PNG/JPEG/SVG",
+          "premium_Monthly": "PNG/JPEG/SVG/PDF",
+          "pro_Yearly": "PNG/JPEG/SVG",
+          "premium_Yearly": "All formats"
         },
         {
           "name": "Bulk QR Creation",
-          "Free": "Not included",
-          "Pro Monthly": "10/upload",
-          "Premium Monthly": "200/upload",
-          "Pro Yearly": "50/upload",
-          "Premium Yearly": "500/upload"
+          "free": "Not included",
+          "pro_Monthly": "10/upload",
+          "premium_Monthly": "200/upload",
+          "pro_Yearly": "50/upload",
+          "premium_Yearly": "500/upload"
         },
         {
           "name": "Scans",
-          "Free": "Unlimited",
-          "Pro Monthly": "Unlimited",
-          "Premium Monthly": "Unlimited",
-          "Pro Yearly": "Unlimited",
-          "Premium Yearly": "Unlimited"
+          "free": "Unlimited",
+          "pro_Monthly": "Unlimited",
+          "premium_Monthly": "Unlimited",
+          "pro_Yearly": "Unlimited",
+          "premium_Yearly": "Unlimited"
         }
       ]
     },
@@ -220,51 +220,51 @@
       "features": [
         {
           "name": "Free Custom Domain",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "1 domain included",
-          "Pro Yearly": "1 domain included",
-          "Premium Yearly": "2 domains included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "1 domain included",
+          "pro_Yearly": "1 domain included",
+          "premium_Yearly": "2 domains included"
         },
         {
           "name": "Multiple Domains",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Not included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Not included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Domain Finder",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "One-Step Domain Setup",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Domain 404 Fixer",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Domain Protection (Domain Guard)",
-          "Free": "Not included",
-          "Pro Monthly": "Basic",
-          "Premium Monthly": "Advanced",
-          "Pro Yearly": "Basic",
-          "Premium Yearly": "Enterprise grade"
+          "free": "Not included",
+          "pro_Monthly": "Basic",
+          "premium_Monthly": "Advanced",
+          "pro_Yearly": "Basic",
+          "premium_Yearly": "Enterprise grade"
         }
       ]
     },
@@ -273,67 +273,67 @@
       "features": [
         {
           "name": "Analytics History",
-          "Free": "7 days",
-          "Pro Monthly": "30 days",
-          "Premium Monthly": "1 year",
-          "Pro Yearly": "120 days",
-          "Premium Yearly": "2 years"
+          "free": "7 days",
+          "pro_Monthly": "30 days",
+          "premium_Monthly": "1 year",
+          "pro_Yearly": "120 days",
+          "premium_Yearly": "2 years"
         },
         {
           "name": "Country Data",
-          "Free": "Top 5 countries",
-          "Pro Monthly": "Top 10 countries",
-          "Premium Monthly": "All countries",
-          "Pro Yearly": "All countries",
-          "Premium Yearly": "All countries"
+          "free": "Top 5 countries",
+          "pro_Monthly": "Top 10 countries",
+          "premium_Monthly": "All countries",
+          "pro_Yearly": "All countries",
+          "premium_Yearly": "All countries"
         },
         {
           "name": "City-Level Data",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Device Insights",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Referrer Tracking",
-          "Free": "Basic",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Advanced"
+          "free": "Basic",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Advanced"
         },
         {
           "name": "Data Export",
-          "Free": "Not included",
-          "Pro Monthly": "CSV",
-          "Premium Monthly": "CSV/Excel/PDF",
-          "Pro Yearly": "CSV/Excel",
-          "Premium Yearly": "All formats"
+          "free": "Not included",
+          "pro_Monthly": "CSV",
+          "premium_Monthly": "CSV/Excel/PDF",
+          "pro_Yearly": "CSV/Excel",
+          "premium_Yearly": "All formats"
         },
         {
           "name": "UTM Campaign Builder",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Traffic Spike Alerts",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         }
       ]
     },
@@ -342,51 +342,51 @@
       "features": [
         {
           "name": "2FA (Two-Factor Authentication)",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Password Protected Links",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Link Expiration",
-          "Free": "Not included",
-          "Pro Monthly": "Included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Included",
+          "premium_Yearly": "Included"
         },
         {
           "name": "Team Seats",
-          "Free": "1",
-          "Pro Monthly": "3 seats",
-          "Premium Monthly": "10 seats",
-          "Pro Yearly": "5 seats",
-          "Premium Yearly": "20 seats"
+          "free": "1",
+          "pro_Monthly": "3 seats",
+          "premium_Monthly": "10 seats",
+          "pro_Yearly": "5 seats",
+          "premium_Yearly": "20 seats"
         },
         {
           "name": "Role Permissions",
-          "Free": "Not included",
-          "Pro Monthly": "Basic roles",
-          "Premium Monthly": "Advanced roles",
-          "Pro Yearly": "Basic roles",
-          "Premium Yearly": "Advanced roles"
+          "free": "Not included",
+          "pro_Monthly": "Basic roles",
+          "premium_Monthly": "Advanced roles",
+          "pro_Yearly": "Basic roles",
+          "premium_Yearly": "Advanced roles"
         },
         {
           "name": "Admin Dashboard Access Logs",
-          "Free": "Not included",
-          "Pro Monthly": "Not included",
-          "Premium Monthly": "Included",
-          "Pro Yearly": "Not included",
-          "Premium Yearly": "Included"
+          "free": "Not included",
+          "pro_Monthly": "Not included",
+          "premium_Monthly": "Included",
+          "pro_Yearly": "Not included",
+          "premium_Yearly": "Included"
         }
       ]
     }

@@ -40,7 +40,7 @@
     @apply py-1 px-3
   }
   tbody th {
-    @apply p-3 text-start border-b border-purple
+    @apply p-3 text-start border-b border-blue
   }
 }
 

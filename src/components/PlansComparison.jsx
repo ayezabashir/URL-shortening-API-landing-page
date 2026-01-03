@@ -4,7 +4,7 @@ import { categories } from "../data/plans-data.json"
 const PlansComparison = () => {
   return (
     <div className="my-10">
-      <h3 className="text-center font-bold text-xl">Plans Features Comparison </h3>
+      <h3 className="text-center font-bold text-2xl">Plans Features Comparison </h3>
       {
         categories.map((cate, index) => (
           <PlansComparisonTable

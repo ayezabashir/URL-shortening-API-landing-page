@@ -3,7 +3,7 @@ import checkicon from "/circle-check.svg";
 const PricingCard = ({ plan, callout, price, planDesc, planFeatures }) => {
     const nav = useNavigate();
     return (
-        <div className="border border-purple  hover:shadow-md hover:scale-105 transition-all duration-150 ease-in-out rounded-md overflow-hidden">
+        <div className="border border-blue  hover:shadow-md hover:scale-105 transition-all duration-150 ease-in-out rounded-md overflow-hidden">
             <header className={`${callout ? "bg-purple text-white" : "bg-blue py-5 text-purple"} p-4 flex justify-between items-center `}>
                 <p className="text-lg font-semibold">{plan}</p>
                 {

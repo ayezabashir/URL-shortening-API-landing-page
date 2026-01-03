@@ -114,11 +114,11 @@
         },
         {
           "name": "Branded Links",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Custom Back-Halves",
@@ -130,15 +130,15 @@
         },
         {
           "name": "Mobile Deep Links",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         },
         {
           "name": "Bulk Link Creation",
-          "free": "Not included",
+          "free": "unincluded",
           "pro_Monthly": "50/upload",
           "premium_Monthly": "500/upload",
           "pro_Yearly": "100/upload",
@@ -175,11 +175,11 @@
         },
         {
           "name": "Custom Logo in QR",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Color & Pattern Options",
@@ -199,7 +199,7 @@
         },
         {
           "name": "Bulk QR Creation",
-          "free": "Not included",
+          "free": "unincluded",
           "pro_Monthly": "10/upload",
           "premium_Monthly": "200/upload",
           "pro_Yearly": "50/upload",
@@ -220,47 +220,47 @@
       "features": [
         {
           "name": "Free Custom Domain",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
           "premium_Monthly": "1 domain included",
           "pro_Yearly": "1 domain included",
           "premium_Yearly": "2 domains included"
         },
         {
           "name": "Multiple Domains",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Not included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "unincluded",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         },
         {
           "name": "Domain Finder",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "One-Step Domain Setup",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Domain 404 Fixer",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Domain Protection (Domain Guard)",
-          "free": "Not included",
+          "free": "unincluded",
           "pro_Monthly": "Basic",
           "premium_Monthly": "Advanced",
           "pro_Yearly": "Basic",
@@ -289,31 +289,31 @@
         },
         {
           "name": "City-Level Data",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         },
         {
           "name": "Device Insights",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         },
         {
           "name": "Referrer Tracking",
           "free": "Basic",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
           "premium_Yearly": "Advanced"
         },
         {
           "name": "Data Export",
-          "free": "Not included",
+          "free": "unincluded",
           "pro_Monthly": "CSV",
           "premium_Monthly": "CSV/Excel/PDF",
           "pro_Yearly": "CSV/Excel",
@@ -321,19 +321,19 @@
         },
         {
           "name": "UTM Campaign Builder",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Traffic Spike Alerts",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         }
       ]
     },
@@ -342,27 +342,27 @@
       "features": [
         {
           "name": "2FA (Two-Factor Authentication)",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Password Protected Links",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         },
         {
           "name": "Link Expiration",
-          "free": "Not included",
-          "pro_Monthly": "Included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "included",
+          "premium_Monthly": "included",
+          "pro_Yearly": "included",
+          "premium_Yearly": "included"
         },
         {
           "name": "Team Seats",
@@ -374,7 +374,7 @@
         },
         {
           "name": "Role Permissions",
-          "free": "Not included",
+          "free": "unincluded",
           "pro_Monthly": "Basic roles",
           "premium_Monthly": "Advanced roles",
           "pro_Yearly": "Basic roles",
@@ -382,11 +382,11 @@
         },
         {
           "name": "Admin Dashboard Access Logs",
-          "free": "Not included",
-          "pro_Monthly": "Not included",
-          "premium_Monthly": "Included",
-          "pro_Yearly": "Not included",
-          "premium_Yearly": "Included"
+          "free": "unincluded",
+          "pro_Monthly": "unincluded",
+          "premium_Monthly": "included",
+          "pro_Yearly": "unincluded",
+          "premium_Yearly": "included"
         }
       ]
     }

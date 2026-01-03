@@ -5,6 +5,15 @@ const PlansComparisonTable = ({ t_heading, t_features }) => {
         unincluded: falseicon,
         included: checkicon
     }
+    const renderValue = (value) => {
+        if (value === "unincluded") {
+            return <img src={iconMap.unincluded} className="w-5" alt="unincluded" />
+        } else if (value === "included") {
+            return <img src={iconMap.included} className="w-5" alt="included" />
+        } else {
+            return value
+        }
+    }
     return (
         <div className="my-5 border border-blue rounded-2xl p-5 w-full overflow-x-auto">
             <h4 className="w-full font-bold text-lg mb-5">
@@ -23,43 +32,34 @@ const PlansComparisonTable = ({ t_heading, t_features }) => {
                     {
                         t_features.map((feature, index) => {
                             const isLast = index === t_features.length - 1;
+                            const borderClass = isLast ? "border-0" : "border-b border-blue";
                             return <tr key={index} >
-                                <td className={`w-[25%] text-sm text-purple py-4 font-medium ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`w-[25%] text-sm text-purple py-4 font-medium ${borderClass}`}>
                                     {feature.name}
                                 </td>
-                                <td className={`text-sm text-purple py-4 font-light ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`text-sm text-purple py-4 font-light ${borderClass}`}>
                                     {
-                                        feature.free === "unincluded" ? <img src={iconMap.unincluded} alt="unincluded" className="w-5" /> :
-                                            feature.free === "included" ? <img src={iconMap.included} alt="included" className="w-5" /> :
-                                                feature.free
+                                        renderValue(feature.free)
                                     }
                                 </td>
-                                <td className={`text-sm text-purple py-4 font-light ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`text-sm text-purple py-4 font-light ${borderClass}`}>
                                     {
-                                        feature.pro_Monthly === "unincluded" ? <img src={iconMap.unincluded} alt="unincluded" className="w-5" /> :
-                                            feature.pro_Monthly === "included" ? <img src={iconMap.included} alt="included" className="w-5" /> :
-                                                feature.premium_Monthly
+                                        renderValue(feature.pro_Monthly)
                                     }
                                 </td>
-                                <td className={`text-sm text-purple py-4 font-light ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`text-sm text-purple py-4 font-light ${borderClass}`}>
                                     {
-                                        feature.premium_Monthly === "unincluded" ? <img src={iconMap.unincluded} alt="unincluded" className="w-5" /> :
-                                            feature.premium_Monthly === "included" ? <img src={iconMap.included} alt="included" className="w-5" /> :
-                                                feature.premium_Monthly
+                                        renderValue(feature.premium_Monthly)
                                     }
                                 </td>
-                                <td className={`text-sm text-purple py-4 font-light ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`text-sm text-purple py-4 font-light ${borderClass}`}>
                                     {
-                                        feature.pro_Yearly === "unincluded" ? <img src={iconMap.unincluded} alt="unincluded" className="w-5" /> :
-                                            feature.pro_Yearly === "included" ? <img src={iconMap.included} alt="included" className="w-5" /> :
-                                                feature.pro_Yearly
+                                        renderValue(feature.pro_Yearly)
                                     }
                                 </td>
-                                <td className={`text-sm text-purple py-4 font-light ${isLast ? "border-0" : "border-b border-blue"}`}>
+                                <td className={`text-sm text-purple py-4 font-light ${borderClass}`}>
                                     {
-                                        feature.premium_Yearly === "unincluded" ? <img src={iconMap.unincluded} alt="unincluded" className="w-5" /> :
-                                            feature.premium_Yearly === "included" ? <img src={iconMap.included} alt="included" className="w-5" /> :
-                                                feature.premium_Yearly
+                                        renderValue(feature.premium_Yearly)
                                     }
                                 </td>
                             </tr>

@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 const BlogTemplate = ({
   fromColor,
   toColor,
@@ -5,24 +7,34 @@ const BlogTemplate = ({
   blogImg,
   logoName,
   subheading,
+  description,
   children,
 }) => {
+  const [isMd, setIsMd] = useState(window.innerWidth >= 768);
+  useEffect(() => {
+    const handleResize = () => setIsMd(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div
-      className="w-full"
+      className="w-full sm:min-h-350 md:min-h-full"
       style={{
-        backgroundImage: `linear-gradient(to right, ${fromColor} 0%, ${fromColor} 50%, ${toColor} 50%, ${toColor} 100%)`,
+        backgroundImage: isMd
+          ? `linear-gradient(to right, ${fromColor} 50%, ${toColor} 50%)`
+          : `linear-gradient(to bottom, ${fromColor} 50%, ${toColor} 50%)`,
       }}
     >
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
-          <div className="px-5 py-10">
+          <div className="pr-10 py-10">
             <h1 className="text-4xl font-bold">{headingName}</h1>
-            <img className="w-full h-50 object-cover" src={blogImg} alt="" />
-            <p>{logoName}</p>
-            <h2>{subheading}</h2>
+            <img className="w-full rounded-3xl my-7" src={blogImg} alt="" />
+            <p className="text-lg font-light">{logoName}</p>
+            <h2 className="text-3xl font-bold my-2">{subheading}</h2>
+            <p className="text-base mt-2">{description}</p>
           </div>
-          <div className="px-5 py-10">{children}</div>
+          <div className="pl-10 py-10">{children}</div>
         </div>
       </div>
     </div>

@@ -26,8 +26,6 @@ const Resources = () => {
   return (
     <>
       <BlogTemplate
-        fromColor="#FFBF3C"
-        toColor="#f7f4ee"
         headingName="Shortly Blog"
         blogImg={herobg}
         logoName="URL SHORTENING"

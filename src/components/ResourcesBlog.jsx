@@ -1,6 +1,6 @@
 const ResourcesBlog = ({ blogimage, blog_cat, blog_title }) => {
   return (
-    <div className="flex flex-col items-start sm:flex-row sm:items-center md:flex-col md:items-start lg:flex-row lg:items-center justify-between gap-5">
+    <div className="flex flex-col items-start sm:flex-row sm:items-center lg:flex-row lg:items-center gap-5 ">
       <img className="w-full sm:w-50 rounded-xl" src={blogimage} alt={blog_title} />
       <div>
         <p className="text-gray mb-2 text-lg">{blog_cat}</p>

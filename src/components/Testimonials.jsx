@@ -43,7 +43,7 @@ const Testimonials = () => {
   const [direction, setDirection] = useState("right");
   const current = testimonials[currentTestimonial];
   const buttonStyles = "w-10 rounded-md bg-purple/25 cursor-pointer border-2 border-purple group"
-  const buttonImage = "p-2 transform group-hover:-translate-x-1 duration-100"
+  const buttonImage = "p-2 transform duration-100"
 
   const prevTestimonial = (index) => {
     setDirection("left")
@@ -73,10 +73,10 @@ const Testimonials = () => {
           }
           <div className="absolute bottom-0 w-full flex justify-center items-center gap-5">
             <button className={buttonStyles} onClick={() => prevTestimonial(currentTestimonial)}>
-              <img className={buttonImage} src={leftarrow} alt="left arrow" />
+              <img className={`${buttonImage} group-hover:-translate-x-1`} src={leftarrow} alt="left arrow" />
             </button>
             <button className={buttonStyles} onClick={() => nextTestimonial(currentTestimonial)}>
-              <img className={buttonImage} src={rightarrow} alt="right arrow" />
+              <img className={`${buttonImage} group-hover:translate-x-1`} src={rightarrow} alt="right arrow" />
             </button>
           </div>
         </div>

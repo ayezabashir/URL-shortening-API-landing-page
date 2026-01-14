@@ -1,6 +1,6 @@
 const ArticlesCard = ({ arti_image, arti_category, arti_title, arti_desc }) => {
   return (
-    <div className="rounded-xl bg-light-gray">
+    <div className="rounded-xl bg-light-gray h-full">
       <div className="aspect-800/450 overflow-hidden">
         <img width="800" height="450" src={arti_image} loading="lazy" decoding="async" alt={arti_title} />
       </div>

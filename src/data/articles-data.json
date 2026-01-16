@@ -1,4 +1,21 @@
 {
+    "blogs": [
+        {
+            "blogimage": "/recentpost1.png",
+            "blog_cat": "Websites",
+            "blog_title": "Websites Building Strategies That Work"
+        },
+        {
+            "blogimage": "/recentpost2.png",
+            "blog_cat": "Mobile",
+            "blog_title": "Tools for Campaigns: Connect, Track, Optimize"
+        },
+        {
+            "blogimage": "/recentpost3.png",
+            "blog_cat": "Branding",
+            "blog_title": "App Landing Page Design Tips for More Installs"
+        }
+    ],
     "articles": [
         {
             "image": "/recentpost1.png",

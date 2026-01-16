@@ -93,5 +93,9 @@
     .blog_template {
       background: linear-gradient(to right, var(--color-blue) 0%, var(--color-blue) 50%, var(--color-light-gray) 50%, var(--color-light-gray) 100%);
     }
+
+    .article_template {
+      background: linear-gradient(to right, var(--color-red) 0%, var(--color-red) 50%, var(--color-light-gray) 50%, var(--color-light-gray) 100%);
+    }
   }
 }

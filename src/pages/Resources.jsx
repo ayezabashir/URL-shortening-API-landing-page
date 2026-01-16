@@ -47,8 +47,15 @@ const Resources = () => {
         blogImg={herobg}
       >
         <h4 className="text-lg font-semibold text-gray">New Report</h4>
-        <h5 className="text-5xl font-extrabold mb-5 text-black leading-snug">Get the Latest QR Code Insights From Marketers Like You</h5>
-        <button type="button" className="bg-purple text-white px-3 py-5 w-52 cursor-pointer text-xl font-semibold capitalize rounded-2xl">See the report</button>
+        <h5 className="text-5xl font-extrabold mb-5 text-black leading-snug">
+          Get the Latest QR Code Insights From Marketers Like You
+        </h5>
+        <button
+          type="button"
+          className="bg-purple text-white px-3 py-5 w-52 cursor-pointer text-xl font-semibold capitalize rounded-2xl"
+        >
+          See the report
+        </button>
       </BlogTemplate>
     </>
   );

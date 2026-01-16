@@ -26,6 +26,7 @@ const Resources = () => {
         </div>
       </BlogTemplate>
       <section className="container">
+        <h3 className="text-4xl my-7 font-extrabold">More Articles</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {articles.map((article, index) => (
             <ArticlesCard

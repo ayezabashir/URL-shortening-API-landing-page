@@ -7,7 +7,7 @@ const ArticlesCard = ({ arti_image, arti_category, arti_title, arti_desc }) => {
       <div className="p-6">
         <p className="text-gray text-xl font-semibold">{arti_category}</p>
         <h4 className="text-3xl font-semibold text-black leading-snug">{arti_title}</h4>
-        <p className="text-xl text-black mt-3">{arti_desc}</p>
+        <p className="text-lg text-black mt-3">{arti_desc}</p>
       </div>
     </div>
   );

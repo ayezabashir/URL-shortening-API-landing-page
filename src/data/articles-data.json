@@ -18,6 +18,7 @@
     ],
     "articles": [
         {
+            "id": 1,
             "image": "/recentpost1.png",
             "category": "QR Codes",
             "title": "Reducing Material Waste with QR Codes and Inventory Tracking",
@@ -25,6 +26,7 @@
             "readText": "Read article: How QR Codes and Short Links Boost Healthcare Communication"
         },
         {
+            "id": 2,
             "image": "/recentpost2.png",
             "category": "Healthcare",
             "title": "How QR Codes and Short Links Boost Healthcare Communication",
@@ -32,6 +34,7 @@
             "readText": "Read article: The Complete Guide to High-Converting Landing Pages"
         },
         {
+            "id": 3,
             "image": "/recentpost3.png",
             "category": "Landing Pages",
             "title": "The Complete Guide to High-Converting Landing Pages",
@@ -39,6 +42,7 @@
             "readText": "Read article: QR Codes in Modern Marketing Campaigns"
         },
         {
+            "id": 4,
             "image": "/recentpost3.png",
             "category": "Marketing",
             "title": "QR Codes in Modern Marketing Campaigns",
@@ -46,6 +50,7 @@
             "readText": "Read article: Improving Customer Experience with Short Links"
         },
         {
+            "id": 5,
             "image": "/recentpost1.png",
             "category": "Short Links",
             "title": "Improving Customer Experience with Short Links",
@@ -53,6 +58,7 @@
             "readText": "Read article: Using QR Codes for Event Management"
         },
         {
+            "id": 6,
             "image": "/recentpost2.png",
             "category": "Events",
             "title": "Using QR Codes for Event Management",
@@ -60,6 +66,7 @@
             "readText": "Read article: The Role of Analytics in Digital Campaigns"
         },
         {
+            "id": 7,
             "image": "/recentpost1.png",
             "category": "Analytics",
             "title": "The Role of Analytics in Digital Campaigns",
@@ -67,6 +74,7 @@
             "readText": "Read article: How Short Links Improve Social Media Strategy"
         },
         {
+            "id": 8,
             "image": "/recentpost2.png",
             "category": "Social Media",
             "title": "How Short Links Improve Social Media Strategy",
@@ -74,6 +82,7 @@
             "readText": "Read article: QR Codes for Retail and In-Store Experiences"
         },
         {
+            "id": 9,
             "image": "/recentpost3.png",
             "category": "Retail",
             "title": "QR Codes for Retail and In-Store Experiences",
@@ -81,6 +90,7 @@
             "readText": "Read article: Building Trust with Branded Short Links"
         },
         {
+            "id": 10,
             "image": "/recentpost3.png",
             "category": "Branding",
             "title": "Building Trust with Branded Short Links",
@@ -88,6 +98,7 @@
             "readText": "Read article: Optimizing Mobile Experiences with QR Codes"
         },
         {
+            "id": 11,
             "image": "/recentpost2.png",
             "category": "Mobile UX",
             "title": "Optimizing Mobile Experiences with QR Codes",
@@ -95,6 +106,7 @@
             "readText": "Read article: A Beginner’s Guide to URL Management"
         },
         {
+            "id": 12,
             "image": "/recentpost1.png",
             "category": "URL Management",
             "title": "A Beginner’s Guide to URL Management",
@@ -102,6 +114,7 @@
             "readText": "Read article: How QR Codes Support Sustainable Business"
         },
         {
+            "id": 13,
             "image": "/recentpost1.png",
             "category": "Sustainability",
             "title": "How QR Codes Support Sustainable Business",
@@ -109,6 +122,7 @@
             "readText": "Read article: Short Links for Email Marketing Success"
         },
         {
+            "id": 14,
             "image": "/recentpost3.png",
             "category": "Email Marketing",
             "title": "Short Links for Email Marketing Success",
@@ -116,6 +130,7 @@
             "readText": "Read article: Using QR Codes in Education"
         },
         {
+            "id": 15,
             "image": "/recentpost2.png",
             "category": "Education",
             "title": "Using QR Codes in Education",
@@ -123,6 +138,7 @@
             "readText": "Read article: Conversion Optimization Best Practices"
         },
         {
+            "id": 16,
             "image": "/recentpost2.png",
             "category": "Conversion Optimization",
             "title": "Conversion Optimization Best Practices",
@@ -130,6 +146,7 @@
             "readText": "Read article: QR Codes in Logistics and Supply Chain"
         },
         {
+            "id": 17,
             "image": "/recentpost1.png",
             "category": "Logistics",
             "title": "QR Codes in Logistics and Supply Chain",
@@ -137,6 +154,7 @@
             "readText": "Read article: The Future of QR Codes and Short Links"
         },
         {
+            "id": 18,
             "image": "/recentpost3.png",
             "category": "Trends",
             "title": "The Future of QR Codes and Short Links",

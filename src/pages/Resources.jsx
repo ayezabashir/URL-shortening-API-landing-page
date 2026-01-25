@@ -3,7 +3,14 @@ import ResourcesBlog from "../components/ResourcesBlog";
 import herobg from "/resource_hero.png";
 import { blogs, articles } from "../data/articles-data.json";
 import ArticlesCard from "../components/ArticlesCard";
+import { useState } from "react";
 const Resources = () => {
+  const [currArticles, setCurrArticles] = useState(6);
+  console.log(currArticles)
+  console.log(articles.length);
+  const handleMoreArticles = () => {
+    if (currArticles <= articles.length) setCurrArticles(currArticles + 3);
+  };
   return (
     <>
       <BlogTemplate
@@ -30,15 +37,27 @@ const Resources = () => {
       <section className="container">
         <h3 className="text-4xl my-7 font-extrabold">More Articles</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {articles.map((article, index) => (
-            <ArticlesCard
-              key={index}
-              arti_image={article.image}
-              arti_category={article.category}
-              arti_title={article.title}
-              arti_desc={article.description}
-            />
-          ))}
+          {articles
+            .filter((article) => article.id <= currArticles)
+            .map((article, index) => (
+              <ArticlesCard
+                key={index}
+                arti_image={article.image}
+                arti_category={article.category}
+                arti_title={article.title}
+                arti_desc={article.description}
+              />
+            ))}
+        </div>
+        <div className="flex justify-center items-center my-5">
+          <button
+            onClick={handleMoreArticles}
+            className={`bg-blue text-black py-2 px-3 text-lg outline-0 ${currArticles === articles.length ? "bg-blue/50 pointer-events-none" : "cursor-pointer"}`}
+          >
+            {currArticles === articles.length
+              ? "No More Articles"
+              : "Show More"}
+          </button>
         </div>
       </section>
       <BlogTemplate

@@ -1,9 +1,11 @@
-import React from 'react'
+import LogInLayout from "../components/LogInLayout"
 
 const Login = () => {
   return (
-    <div>Login</div>
-  )
+    <>
+      <LogInLayout />
+    </>
+  );
 }
 
 export default Login

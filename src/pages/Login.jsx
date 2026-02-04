@@ -9,6 +9,26 @@ const Login = () => {
         btnLink="/signup"
         btnText="Sign Up"
       >
+        <div className="w-full">
+          <div className="w-full">
+            <input
+              className="w-full mb-3 px-3 py-4 border rounded-md"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email..."
+            />
+          </div>
+          <div className="w-full">
+            <input
+              className="w-full mb-3 px-3 py-4 border rounded-md"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password..."
+            />
+          </div>
+        </div>
         <button className="border flex items-center justify-center gap-2 cursor-pointer hover:bg-light-gray w-full text-lg font-semibold py-2 rounded-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"

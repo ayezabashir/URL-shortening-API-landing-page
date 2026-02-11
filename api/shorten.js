@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -16,10 +14,13 @@ export default async function handler(req, res) {
       },
       body: new URLSearchParams({ url }),
     });
+    if (!response.ok) {
+      throw new Error("CleanURI API failed");
+    }
     const data = await response.json();
-    res.status(200).json(data);
+    return res.status(200).json(data);
   } catch (error) {
-    console.log(error);
-    res.status(500).json({ error: "Failed to shorten URL" });
+    console.error("Shorten error:", error);
+    return res.status(500).json({ error: "Failed to shorten URL" });
   }
 }

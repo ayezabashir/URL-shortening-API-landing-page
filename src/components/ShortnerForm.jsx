@@ -16,10 +16,13 @@ const ShortnerForm = ({ links, setLinks }) => {
             setLoading(true);
             setError("");
             const response = await fetch("/api/shorten", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ url: url.trim() }),
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ url: url.trim() }),
             });
+            if (!response.ok) {
+              throw new Error("Server error");
+            }
             const data = await response.json();
             if (data.error) {
                 setError(data.error);

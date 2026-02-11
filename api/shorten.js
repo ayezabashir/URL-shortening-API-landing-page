@@ -1,12 +1,9 @@
-import express from "express";
-import cors from "cors";
 import fetch from "node-fetch";
-const app = express();
-app.use(cors());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
-app.post("/api/shorten", async (req, res) => {
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
   const { url } = req.body;
   if (!url) {
     return res.status(400).json({ error: "URL is required" });
@@ -20,12 +17,9 @@ app.post("/api/shorten", async (req, res) => {
       body: new URLSearchParams({ url }),
     });
     const data = await response.json();
-    res.json(data);
+    res.status(200).json(data);
   } catch (error) {
-    res.status(500).json({ error: "Failed to shorten URL" });
     console.log(error);
+    res.status(500).json({ error: "Failed to shorten URL" });
   }
-});
-app.listen(3000, () => {
-  console.log("Backend running on http://localhost:3000");
-});
+}

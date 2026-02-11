@@ -8,40 +8,30 @@ const ShortnerForm = ({ links, setLinks }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         if (!url.trim()) {
             setError("Please enter a valid URL");
             return;
         }
-
         try {
             setLoading(true);
             setError("");
-
-            const response = await fetch("http://localhost:3000/api/shorten", {
+            const response = await fetch("/api/shorten", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ url: url.trim() }),
             });
-
-
             const data = await response.json();
-
             if (data.error) {
                 setError(data.error);
                 return;
             }
-
             const newLink = {
                 original: url,
                 short: data.result_url,
             };
-
             const updatedLinks = [newLink, ...links];
-
             setLinks(updatedLinks);
             localStorage.setItem("shortLinks", JSON.stringify(updatedLinks));
-
             setUrl("");
         } catch (err) {
             setError("Something went wrong. Please try again.");
